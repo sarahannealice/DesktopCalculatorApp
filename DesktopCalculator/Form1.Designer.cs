@@ -290,7 +290,7 @@
             this.display.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.display.Size = new System.Drawing.Size(315, 43);
             this.display.TabIndex = 21;
-            this.display.Text = "display";
+            this.display.Text = "0";
             this.display.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
