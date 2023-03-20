@@ -48,7 +48,7 @@
             this.btnDecimal = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.btnPosNeg = new System.Windows.Forms.Button();
-            this.display = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCE
@@ -123,7 +123,7 @@
             this.btnNine.Tag = 9;
             this.btnNine.Text = "9";
             this.btnNine.UseVisualStyleBackColor = false;
-            this.btnNine.Click += new System.EventHandler(NumBtnClicked);
+            this.btnNine.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnEight
             // 
@@ -133,10 +133,10 @@
             this.btnEight.Name = "btnEight";
             this.btnEight.Size = new System.Drawing.Size(74, 37);
             this.btnEight.TabIndex = 6;
-            this.btnEight.Tag= 8;
+            this.btnEight.Tag = 8;
             this.btnEight.Text = "8";
             this.btnEight.UseVisualStyleBackColor = false;
-            this.btnEight.Click += new System.EventHandler(NumBtnClicked);
+            this.btnEight.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnSeven
             // 
@@ -146,10 +146,10 @@
             this.btnSeven.Name = "btnSeven";
             this.btnSeven.Size = new System.Drawing.Size(74, 37);
             this.btnSeven.TabIndex = 5;
-            this.btnSeven.Tag= 7;
+            this.btnSeven.Tag = 7;
             this.btnSeven.Text = "7";
             this.btnSeven.UseVisualStyleBackColor = false;
-            this.btnSeven.Click += new System.EventHandler(NumBtnClicked);
+            this.btnSeven.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnSubtract
             // 
@@ -174,7 +174,7 @@
             this.btnSix.Tag = 6;
             this.btnSix.Text = "6";
             this.btnSix.UseVisualStyleBackColor = false;
-            this.btnSix.Click += new System.EventHandler(NumBtnClicked);
+            this.btnSix.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnFive
             // 
@@ -187,7 +187,7 @@
             this.btnFive.Tag = 5;
             this.btnFive.Text = "5";
             this.btnFive.UseVisualStyleBackColor = false;
-            this.btnFive.Click += new System.EventHandler(NumBtnClicked);
+            this.btnFive.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnFour
             // 
@@ -200,7 +200,7 @@
             this.btnFour.Tag = 4;
             this.btnFour.Text = "4";
             this.btnFour.UseVisualStyleBackColor = false;
-            this.btnFour.Click += new System.EventHandler(NumBtnClicked);
+            this.btnFour.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnAdd
             // 
@@ -225,7 +225,7 @@
             this.btnThree.Tag = 3;
             this.btnThree.Text = "3";
             this.btnThree.UseVisualStyleBackColor = false;
-            this.btnThree.Click += new System.EventHandler(NumBtnClicked);
+            this.btnThree.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnTwo
             // 
@@ -238,7 +238,7 @@
             this.btnTwo.Tag = 2;
             this.btnTwo.Text = "2";
             this.btnTwo.UseVisualStyleBackColor = false;
-            this.btnTwo.Click += new System.EventHandler(NumBtnClicked);
+            this.btnTwo.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnOne
             // 
@@ -251,7 +251,7 @@
             this.btnOne.Tag = 1;
             this.btnOne.Text = "1";
             this.btnOne.UseVisualStyleBackColor = false;
-            this.btnOne.Click += new System.EventHandler(NumBtnClicked);
+            this.btnOne.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnSum
             // 
@@ -276,7 +276,7 @@
             this.btnDecimal.Tag = "Dec";
             this.btnDecimal.Text = ".";
             this.btnDecimal.UseVisualStyleBackColor = false;
-            this.btnDecimal.Click += new System.EventHandler(NumBtnClicked);
+            this.btnDecimal.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnZero
             // 
@@ -289,7 +289,7 @@
             this.btnZero.Tag = 0;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = false;
-            this.btnZero.Click += new System.EventHandler(NumBtnClicked);
+            this.btnZero.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnPosNeg
             // 
@@ -305,22 +305,22 @@
             // 
             // display
             // 
-            this.display.BackColor = System.Drawing.Color.LavenderBlush;
-            this.display.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.display.Location = new System.Drawing.Point(12, 31);
-            this.display.Name = "display";
-            this.display.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.display.Size = new System.Drawing.Size(315, 38);
-            this.display.TabIndex = 21;
-            this.display.Text = "0";
+            this.label1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 31);
+            this.label1.Name = "display";
+            this.label1.Size = new System.Drawing.Size(315, 43);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "0";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Form1
+            // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
             this.ClientSize = new System.Drawing.Size(339, 328);
-            this.Controls.Add(this.display);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSum);
             this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btnZero);
@@ -342,7 +342,7 @@
             this.Controls.Add(this.btnC);
             this.Controls.Add(this.btnCE);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.Name = "Form1";
+            this.Name = "Form";
             this.ResumeLayout(false);
 
         }
@@ -368,6 +368,6 @@
         private Button btnDecimal;
         private Button btnZero;
         private Button btnPosNeg;
-        private Label display;
+        private Label label1;
     }
 }

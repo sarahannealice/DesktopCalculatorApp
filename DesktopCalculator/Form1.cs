@@ -16,11 +16,7 @@ namespace DesktopCalculator
             InitializeComponent();
         }
 
-        private void btnCE_Click(object sender, EventArgs e)
-        {
-            display.Text = "0";
-        }
-
+        //----------------------------------EVENT HANDLERS----------------------------------//
         private void NumBtnClicked(object sender, EventArgs e)
         {
             //resets display if number is pressed directly after 'calculate'
@@ -63,6 +59,20 @@ namespace DesktopCalculator
             }
         }
 
+        private void btnCE_Click(object sender, EventArgs e)
+        {
+            display.Text = "0";
+        }
+
+
+
+
+
+
+
+
+
+        //----------------------------------METHODS----------------------------------//
         private void addToDisplay(string inputDigit, string rightEq)
         {
             if (display.Text.Equals("0"))
