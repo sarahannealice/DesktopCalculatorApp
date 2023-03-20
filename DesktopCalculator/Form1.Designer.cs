@@ -326,6 +326,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Thistle;
             ClientSize = new Size(339, 328);
             Controls.Add(display);

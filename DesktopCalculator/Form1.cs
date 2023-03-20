@@ -134,6 +134,7 @@ namespace DesktopCalculator
                     display.Text = "0";
                     break;
                 case "Del":
+                    tempNum = display.Text;
                     DeleteDigit(tempNum);
                     break;
             }
@@ -144,7 +145,7 @@ namespace DesktopCalculator
 
         //----------------------------------METHODS----------------------------------//
         //method to delete digit
-        private void DeleteDigit(string tmepNum)
+        private void DeleteDigit(string tempNum)
         {
             if (tempNum == "0")
             {
@@ -157,7 +158,7 @@ namespace DesktopCalculator
             }
             else
             {
-                tempNum = tempNum.Remove(tempNum.Length-1, 1);
+                tempNum = tempNum.Remove(tempNum.Length - 1, 1);
                 display.Text = tempNum;
             }
         }//end delete digit method
@@ -171,11 +172,13 @@ namespace DesktopCalculator
                 {
                     //keeps 0 and adds decimal after
                     display.Text += inputDigit;
-                } else
+                }
+                else
                 {
                     display.Text = inputDigit;
                 }
-            } else if (inputDigit.Equals(".") && tempNum.Contains('.'))
+            }
+            else if (inputDigit.Equals(".") && tempNum.Contains('.'))
             {
                 //do nothing
             }
