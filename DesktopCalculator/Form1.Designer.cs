@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             btnCE = new Button();
             btnC = new Button();
             btnDelete = new Button();
@@ -310,6 +311,7 @@
             btnPosNeg.Tag = "PosNeg";
             btnPosNeg.Text = "+/-";
             btnPosNeg.UseVisualStyleBackColor = false;
+            btnPosNeg.Click += NumBtnClicked;
             // 
             // display
             // 
@@ -351,6 +353,7 @@
             Controls.Add(btnC);
             Controls.Add(btnCE);
             Cursor = Cursors.WaitCursor;
+            Icon = (Icon)resources.GetObject("$this.Icon");//https://www.flaticon.com/free-icons/calculator
             Name = "Form1";
             ResumeLayout(false);
         }

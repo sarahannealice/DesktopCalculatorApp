@@ -61,7 +61,8 @@ namespace DesktopCalculator
                     AddToDisplay(".", tempNum);
                     break;
                 case "PosNeg":
-                    //send to posneg method
+                    double convertNum = Convert.ToDouble(tempNum);
+                    PosNeg(convertNum);
                     break;
             }
         }//end num btn handler
@@ -123,6 +124,8 @@ namespace DesktopCalculator
 
         private void MiscBtnclicked(object sender, EventArgs e)
         {
+            tempNum = display.Text;
+
             switch (((Button)sender).Tag)
             {
                 case "CE":
@@ -134,7 +137,6 @@ namespace DesktopCalculator
                     display.Text = "0";
                     break;
                 case "Del":
-                    tempNum = display.Text;
                     DeleteDigit(tempNum);
                     break;
             }
@@ -162,6 +164,16 @@ namespace DesktopCalculator
                 display.Text = tempNum;
             }
         }//end delete digit method
+
+
+        //method to convert number from positive to negative
+        private void PosNeg(double convertNum)
+        {
+            convertNum = convertNum / -1;
+            tempNum = convertNum.ToString();
+            display.Text = tempNum;
+        }
+
 
         //method to add inputted number/decimal to display
         private void AddToDisplay(string inputDigit, string tempNum)
