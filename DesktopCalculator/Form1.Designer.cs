@@ -269,7 +269,7 @@
             this.btnZero.TabIndex = 18;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = false;
-            this.btnZero.Click += new System.EventHandler(this.btnZero_Click_1);
+            this.btnZero.Click += new System.EventHandler(this.btnZero_Click);
             // 
             // btnPosNeg
             // 
@@ -292,7 +292,6 @@
             this.display.Size = new System.Drawing.Size(315, 43);
             this.display.TabIndex = 21;
             this.display.Text = "0";
-            this.display.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
@@ -349,5 +348,8 @@
         private Button btnZero;
         private Button btnPosNeg;
         private Label display;
+
+        private void NumBtnClickHandler(object sender, EventArgs e) { 
+        }
     }
 }

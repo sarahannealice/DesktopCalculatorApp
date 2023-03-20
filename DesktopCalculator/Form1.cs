@@ -83,13 +83,7 @@ namespace DesktopCalculator
             }
         }
 
-        //label1 might be for the form itself, not sure
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnZero_Click_1(object sender, EventArgs e)
+        private void btnZero_Click(object sender, EventArgs e)
         {
             btnZero.Click += NumBtnClickHandler;
         }
