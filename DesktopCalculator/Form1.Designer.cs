@@ -28,330 +28,330 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCE = new System.Windows.Forms.Button();
-            this.btnC = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnDivide = new System.Windows.Forms.Button();
-            this.btnMultiply = new System.Windows.Forms.Button();
-            this.btnNine = new System.Windows.Forms.Button();
-            this.btnEight = new System.Windows.Forms.Button();
-            this.btnSeven = new System.Windows.Forms.Button();
-            this.btnSubtract = new System.Windows.Forms.Button();
-            this.btnSix = new System.Windows.Forms.Button();
-            this.btnFive = new System.Windows.Forms.Button();
-            this.btnFour = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnThree = new System.Windows.Forms.Button();
-            this.btnTwo = new System.Windows.Forms.Button();
-            this.btnOne = new System.Windows.Forms.Button();
-            this.btnCalc = new System.Windows.Forms.Button();
-            this.btnDecimal = new System.Windows.Forms.Button();
-            this.btnZero = new System.Windows.Forms.Button();
-            this.btnPosNeg = new System.Windows.Forms.Button();
-            this.display = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            btnCE = new Button();
+            btnC = new Button();
+            btnDelete = new Button();
+            btnDivide = new Button();
+            btnMultiply = new Button();
+            btnNine = new Button();
+            btnEight = new Button();
+            btnSeven = new Button();
+            btnSubtract = new Button();
+            btnSix = new Button();
+            btnFive = new Button();
+            btnFour = new Button();
+            btnAdd = new Button();
+            btnThree = new Button();
+            btnTwo = new Button();
+            btnOne = new Button();
+            btnCalc = new Button();
+            btnDecimal = new Button();
+            btnZero = new Button();
+            btnPosNeg = new Button();
+            display = new Label();
+            SuspendLayout();
             // 
             // btnCE
             // 
-            this.btnCE.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnCE.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnCE.Location = new System.Drawing.Point(12, 96);
-            this.btnCE.Name = "btnCE";
-            this.btnCE.Size = new System.Drawing.Size(74, 37);
-            this.btnCE.TabIndex = 1;
-            this.btnCE.Tag = "CE";
-            this.btnCE.Text = "CE";
-            this.btnCE.UseVisualStyleBackColor = false;
-            this.btnCE.Click += new System.EventHandler(this.MiscBtnclicked);
+            btnCE.BackColor = Color.PaleVioletRed;
+            btnCE.ForeColor = Color.LavenderBlush;
+            btnCE.Location = new Point(12, 96);
+            btnCE.Name = "btnCE";
+            btnCE.Size = new Size(74, 37);
+            btnCE.TabIndex = 1;
+            btnCE.Tag = "CE";
+            btnCE.Text = "CE";
+            btnCE.UseVisualStyleBackColor = false;
+            btnCE.Click += MiscBtnclicked;
             // 
             // btnC
             // 
-            this.btnC.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnC.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnC.Location = new System.Drawing.Point(92, 96);
-            this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(74, 37);
-            this.btnC.TabIndex = 2;
-            this.btnC.Tag = "C";
-            this.btnC.Text = "C";
-            this.btnC.UseVisualStyleBackColor = false;
-            this.btnC.Click += new System.EventHandler(this.MiscBtnclicked);
+            btnC.BackColor = Color.PaleVioletRed;
+            btnC.ForeColor = Color.LavenderBlush;
+            btnC.Location = new Point(92, 96);
+            btnC.Name = "btnC";
+            btnC.Size = new Size(74, 37);
+            btnC.TabIndex = 2;
+            btnC.Tag = "C";
+            btnC.Text = "C";
+            btnC.UseVisualStyleBackColor = false;
+            btnC.Click += MiscBtnclicked;
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnDelete.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnDelete.Location = new System.Drawing.Point(172, 96);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(74, 37);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Tag = "Del";
-            this.btnDelete.Text = "⌫";
-            this.btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.BackColor = Color.PaleVioletRed;
+            btnDelete.ForeColor = Color.LavenderBlush;
+            btnDelete.Location = new Point(172, 96);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(74, 37);
+            btnDelete.TabIndex = 3;
+            btnDelete.Tag = "Del";
+            btnDelete.Text = "⌫";
+            btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += MiscBtnclicked;
             // 
             // btnDivide
             // 
-            this.btnDivide.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnDivide.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnDivide.Location = new System.Drawing.Point(253, 96);
-            this.btnDivide.Name = "btnDivide";
-            this.btnDivide.Size = new System.Drawing.Size(74, 37);
-            this.btnDivide.TabIndex = 4;
-            this.btnDivide.Tag = "Div";
-            this.btnDivide.Text = "/";
-            this.btnDivide.UseVisualStyleBackColor = false;
-            this.btnDivide.Click += new System.EventHandler(this.OpBtnClicked);
+            btnDivide.BackColor = Color.PaleVioletRed;
+            btnDivide.ForeColor = Color.LavenderBlush;
+            btnDivide.Location = new Point(253, 96);
+            btnDivide.Name = "btnDivide";
+            btnDivide.Size = new Size(74, 37);
+            btnDivide.TabIndex = 4;
+            btnDivide.Tag = "Div";
+            btnDivide.Text = "/";
+            btnDivide.UseVisualStyleBackColor = false;
+            btnDivide.Click += OpBtnClicked;
             // 
             // btnMultiply
             // 
-            this.btnMultiply.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnMultiply.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnMultiply.Location = new System.Drawing.Point(253, 139);
-            this.btnMultiply.Name = "btnMultiply";
-            this.btnMultiply.Size = new System.Drawing.Size(74, 37);
-            this.btnMultiply.TabIndex = 8;
-            this.btnMultiply.Tag = "Mult";
-            this.btnMultiply.Text = "*";
-            this.btnMultiply.UseVisualStyleBackColor = false;
-            this.btnMultiply.Click += new System.EventHandler(this.OpBtnClicked);
-            // 
-            // btnSubtract
-            // 
-            this.btnSubtract.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnSubtract.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnSubtract.Location = new System.Drawing.Point(253, 181);
-            this.btnSubtract.Name = "btnSubtract";
-            this.btnSubtract.Size = new System.Drawing.Size(74, 37);
-            this.btnSubtract.TabIndex = 12;
-            this.btnSubtract.Tag = "Sub";
-            this.btnSubtract.Text = "-";
-            this.btnSubtract.UseVisualStyleBackColor = false;
-            this.btnSubtract.Click += new System.EventHandler(this.OpBtnClicked);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAdd.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnAdd.Location = new System.Drawing.Point(253, 223);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(74, 37);
-            this.btnAdd.TabIndex = 16;
-            this.btnAdd.Tag = "Add";
-            this.btnAdd.Text = "+";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.OpBtnClicked);
-            // 
-            // btnCalc
-            // 
-            this.btnCalc.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnCalc.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnCalc.Location = new System.Drawing.Point(253, 266);
-            this.btnCalc.Name = "btnCalc";
-            this.btnCalc.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCalc.Size = new System.Drawing.Size(74, 37);
-            this.btnCalc.TabIndex = 20;
-            this.btnCalc.Tag = "Calc";
-            this.btnCalc.Text = "=";
-            this.btnCalc.UseVisualStyleBackColor = false;
-            this.btnCalc.Click += new System.EventHandler(this.OpBtnClicked);
+            btnMultiply.BackColor = Color.PaleVioletRed;
+            btnMultiply.ForeColor = Color.LavenderBlush;
+            btnMultiply.Location = new Point(253, 139);
+            btnMultiply.Name = "btnMultiply";
+            btnMultiply.Size = new Size(74, 37);
+            btnMultiply.TabIndex = 8;
+            btnMultiply.Tag = "Mult";
+            btnMultiply.Text = "*";
+            btnMultiply.UseVisualStyleBackColor = false;
+            btnMultiply.Click += OpBtnClicked;
             // 
             // btnNine
             // 
-            this.btnNine.BackColor = System.Drawing.Color.Pink;
-            this.btnNine.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnNine.Location = new System.Drawing.Point(172, 139);
-            this.btnNine.Name = "btnNine";
-            this.btnNine.Size = new System.Drawing.Size(74, 37);
-            this.btnNine.TabIndex = 7;
-            this.btnNine.Tag = 9;
-            this.btnNine.Text = "9";
-            this.btnNine.UseVisualStyleBackColor = false;
-            this.btnNine.Click += new System.EventHandler(this.NumBtnClicked);
+            btnNine.BackColor = Color.Pink;
+            btnNine.ForeColor = SystemColors.WindowText;
+            btnNine.Location = new Point(172, 139);
+            btnNine.Name = "btnNine";
+            btnNine.Size = new Size(74, 37);
+            btnNine.TabIndex = 7;
+            btnNine.Tag = 9;
+            btnNine.Text = "9";
+            btnNine.UseVisualStyleBackColor = false;
+            btnNine.Click += NumBtnClicked;
             // 
             // btnEight
             // 
-            this.btnEight.BackColor = System.Drawing.Color.Pink;
-            this.btnEight.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnEight.Location = new System.Drawing.Point(92, 139);
-            this.btnEight.Name = "btnEight";
-            this.btnEight.Size = new System.Drawing.Size(74, 37);
-            this.btnEight.TabIndex = 6;
-            this.btnEight.Tag = 8;
-            this.btnEight.Text = "8";
-            this.btnEight.UseVisualStyleBackColor = false;
-            this.btnEight.Click += new System.EventHandler(this.NumBtnClicked);
+            btnEight.BackColor = Color.Pink;
+            btnEight.ForeColor = SystemColors.WindowText;
+            btnEight.Location = new Point(92, 139);
+            btnEight.Name = "btnEight";
+            btnEight.Size = new Size(74, 37);
+            btnEight.TabIndex = 6;
+            btnEight.Tag = 8;
+            btnEight.Text = "8";
+            btnEight.UseVisualStyleBackColor = false;
+            btnEight.Click += NumBtnClicked;
             // 
             // btnSeven
             // 
-            this.btnSeven.BackColor = System.Drawing.Color.Pink;
-            this.btnSeven.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnSeven.Location = new System.Drawing.Point(12, 139);
-            this.btnSeven.Name = "btnSeven";
-            this.btnSeven.Size = new System.Drawing.Size(74, 37);
-            this.btnSeven.TabIndex = 5;
-            this.btnSeven.Tag = 7;
-            this.btnSeven.Text = "7";
-            this.btnSeven.UseVisualStyleBackColor = false;
-            this.btnSeven.Click += new System.EventHandler(this.NumBtnClicked);
+            btnSeven.BackColor = Color.Pink;
+            btnSeven.ForeColor = SystemColors.WindowText;
+            btnSeven.Location = new Point(12, 139);
+            btnSeven.Name = "btnSeven";
+            btnSeven.Size = new Size(74, 37);
+            btnSeven.TabIndex = 5;
+            btnSeven.Tag = 7;
+            btnSeven.Text = "7";
+            btnSeven.UseVisualStyleBackColor = false;
+            btnSeven.Click += NumBtnClicked;
+            // 
+            // btnSubtract
+            // 
+            btnSubtract.BackColor = Color.PaleVioletRed;
+            btnSubtract.ForeColor = Color.LavenderBlush;
+            btnSubtract.Location = new Point(253, 181);
+            btnSubtract.Name = "btnSubtract";
+            btnSubtract.Size = new Size(74, 37);
+            btnSubtract.TabIndex = 12;
+            btnSubtract.Tag = "Sub";
+            btnSubtract.Text = "-";
+            btnSubtract.UseVisualStyleBackColor = false;
+            btnSubtract.Click += OpBtnClicked;
             // 
             // btnSix
             // 
-            this.btnSix.BackColor = System.Drawing.Color.Pink;
-            this.btnSix.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnSix.Location = new System.Drawing.Point(172, 181);
-            this.btnSix.Name = "btnSix";
-            this.btnSix.Size = new System.Drawing.Size(74, 37);
-            this.btnSix.TabIndex = 11;
-            this.btnSix.Tag = 6;
-            this.btnSix.Text = "6";
-            this.btnSix.UseVisualStyleBackColor = false;
-            this.btnSix.Click += new System.EventHandler(this.NumBtnClicked);
+            btnSix.BackColor = Color.Pink;
+            btnSix.ForeColor = SystemColors.WindowText;
+            btnSix.Location = new Point(172, 181);
+            btnSix.Name = "btnSix";
+            btnSix.Size = new Size(74, 37);
+            btnSix.TabIndex = 11;
+            btnSix.Tag = 6;
+            btnSix.Text = "6";
+            btnSix.UseVisualStyleBackColor = false;
+            btnSix.Click += NumBtnClicked;
             // 
             // btnFive
             // 
-            this.btnFive.BackColor = System.Drawing.Color.Pink;
-            this.btnFive.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnFive.Location = new System.Drawing.Point(92, 181);
-            this.btnFive.Name = "btnFive";
-            this.btnFive.Size = new System.Drawing.Size(74, 37);
-            this.btnFive.TabIndex = 10;
-            this.btnFive.Tag = 5;
-            this.btnFive.Text = "5";
-            this.btnFive.UseVisualStyleBackColor = false;
-            this.btnFive.Click += new System.EventHandler(this.NumBtnClicked);
+            btnFive.BackColor = Color.Pink;
+            btnFive.ForeColor = SystemColors.WindowText;
+            btnFive.Location = new Point(92, 181);
+            btnFive.Name = "btnFive";
+            btnFive.Size = new Size(74, 37);
+            btnFive.TabIndex = 10;
+            btnFive.Tag = 5;
+            btnFive.Text = "5";
+            btnFive.UseVisualStyleBackColor = false;
+            btnFive.Click += NumBtnClicked;
             // 
             // btnFour
             // 
-            this.btnFour.BackColor = System.Drawing.Color.Pink;
-            this.btnFour.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnFour.Location = new System.Drawing.Point(12, 181);
-            this.btnFour.Name = "btnFour";
-            this.btnFour.Size = new System.Drawing.Size(74, 37);
-            this.btnFour.TabIndex = 9;
-            this.btnFour.Tag = 4;
-            this.btnFour.Text = "4";
-            this.btnFour.UseVisualStyleBackColor = false;
-            this.btnFour.Click += new System.EventHandler(this.NumBtnClicked);
+            btnFour.BackColor = Color.Pink;
+            btnFour.ForeColor = SystemColors.WindowText;
+            btnFour.Location = new Point(12, 181);
+            btnFour.Name = "btnFour";
+            btnFour.Size = new Size(74, 37);
+            btnFour.TabIndex = 9;
+            btnFour.Tag = 4;
+            btnFour.Text = "4";
+            btnFour.UseVisualStyleBackColor = false;
+            btnFour.Click += NumBtnClicked;
+            // 
+            // btnAdd
+            // 
+            btnAdd.BackColor = Color.PaleVioletRed;
+            btnAdd.ForeColor = Color.LavenderBlush;
+            btnAdd.Location = new Point(253, 223);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(74, 37);
+            btnAdd.TabIndex = 16;
+            btnAdd.Tag = "Add";
+            btnAdd.Text = "+";
+            btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += OpBtnClicked;
             // 
             // btnThree
             // 
-            this.btnThree.BackColor = System.Drawing.Color.Pink;
-            this.btnThree.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnThree.Location = new System.Drawing.Point(172, 223);
-            this.btnThree.Name = "btnThree";
-            this.btnThree.Size = new System.Drawing.Size(74, 37);
-            this.btnThree.TabIndex = 15;
-            this.btnThree.Tag = 3;
-            this.btnThree.Text = "3";
-            this.btnThree.UseVisualStyleBackColor = false;
-            this.btnThree.Click += new System.EventHandler(this.NumBtnClicked);
+            btnThree.BackColor = Color.Pink;
+            btnThree.ForeColor = SystemColors.WindowText;
+            btnThree.Location = new Point(172, 223);
+            btnThree.Name = "btnThree";
+            btnThree.Size = new Size(74, 37);
+            btnThree.TabIndex = 15;
+            btnThree.Tag = 3;
+            btnThree.Text = "3";
+            btnThree.UseVisualStyleBackColor = false;
+            btnThree.Click += NumBtnClicked;
             // 
             // btnTwo
             // 
-            this.btnTwo.BackColor = System.Drawing.Color.Pink;
-            this.btnTwo.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnTwo.Location = new System.Drawing.Point(92, 223);
-            this.btnTwo.Name = "btnTwo";
-            this.btnTwo.Size = new System.Drawing.Size(74, 37);
-            this.btnTwo.TabIndex = 14;
-            this.btnTwo.Tag = 2;
-            this.btnTwo.Text = "2";
-            this.btnTwo.UseVisualStyleBackColor = false;
-            this.btnTwo.Click += new System.EventHandler(this.NumBtnClicked);
+            btnTwo.BackColor = Color.Pink;
+            btnTwo.ForeColor = SystemColors.WindowText;
+            btnTwo.Location = new Point(92, 223);
+            btnTwo.Name = "btnTwo";
+            btnTwo.Size = new Size(74, 37);
+            btnTwo.TabIndex = 14;
+            btnTwo.Tag = 2;
+            btnTwo.Text = "2";
+            btnTwo.UseVisualStyleBackColor = false;
+            btnTwo.Click += NumBtnClicked;
             // 
             // btnOne
             // 
-            this.btnOne.BackColor = System.Drawing.Color.Pink;
-            this.btnOne.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnOne.Location = new System.Drawing.Point(12, 223);
-            this.btnOne.Name = "btnOne";
-            this.btnOne.Size = new System.Drawing.Size(74, 37);
-            this.btnOne.TabIndex = 13;
-            this.btnOne.Tag = 1;
-            this.btnOne.Text = "1";
-            this.btnOne.UseVisualStyleBackColor = false;
-            this.btnOne.Click += new System.EventHandler(this.NumBtnClicked);
+            btnOne.BackColor = Color.Pink;
+            btnOne.ForeColor = SystemColors.WindowText;
+            btnOne.Location = new Point(12, 223);
+            btnOne.Name = "btnOne";
+            btnOne.Size = new Size(74, 37);
+            btnOne.TabIndex = 13;
+            btnOne.Tag = 1;
+            btnOne.Text = "1";
+            btnOne.UseVisualStyleBackColor = false;
+            btnOne.Click += NumBtnClicked;
             // 
-            // btnZero
+            // btnCalc
             // 
-            this.btnZero.BackColor = System.Drawing.Color.Pink;
-            this.btnZero.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnZero.Location = new System.Drawing.Point(92, 266);
-            this.btnZero.Name = "btnZero";
-            this.btnZero.Size = new System.Drawing.Size(74, 37);
-            this.btnZero.TabIndex = 18;
-            this.btnZero.Tag = 0;
-            this.btnZero.Text = "0";
-            this.btnZero.UseVisualStyleBackColor = false;
-            this.btnZero.Click += new System.EventHandler(this.NumBtnClicked);
+            btnCalc.BackColor = Color.PaleVioletRed;
+            btnCalc.ForeColor = Color.LavenderBlush;
+            btnCalc.Location = new Point(253, 266);
+            btnCalc.Name = "btnCalc";
+            btnCalc.RightToLeft = RightToLeft.No;
+            btnCalc.Size = new Size(74, 37);
+            btnCalc.TabIndex = 20;
+            btnCalc.Tag = "Calc";
+            btnCalc.Text = "=";
+            btnCalc.UseVisualStyleBackColor = false;
+            btnCalc.Click += OpBtnClicked;
             // 
             // btnDecimal
             // 
-            this.btnDecimal.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnDecimal.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnDecimal.Location = new System.Drawing.Point(172, 266);
-            this.btnDecimal.Name = "btnDecimal";
-            this.btnDecimal.Size = new System.Drawing.Size(74, 37);
-            this.btnDecimal.TabIndex = 19;
-            this.btnDecimal.Tag = "Dec";
-            this.btnDecimal.Text = ".";
-            this.btnDecimal.UseVisualStyleBackColor = false;
-            this.btnDecimal.Click += new System.EventHandler(this.NumBtnClicked);
+            btnDecimal.BackColor = Color.PaleVioletRed;
+            btnDecimal.ForeColor = Color.LavenderBlush;
+            btnDecimal.Location = new Point(172, 266);
+            btnDecimal.Name = "btnDecimal";
+            btnDecimal.Size = new Size(74, 37);
+            btnDecimal.TabIndex = 19;
+            btnDecimal.Tag = "Dec";
+            btnDecimal.Text = ".";
+            btnDecimal.UseVisualStyleBackColor = false;
+            btnDecimal.Click += NumBtnClicked;
+            // 
+            // btnZero
+            // 
+            btnZero.BackColor = Color.Pink;
+            btnZero.ForeColor = SystemColors.WindowText;
+            btnZero.Location = new Point(92, 266);
+            btnZero.Name = "btnZero";
+            btnZero.Size = new Size(74, 37);
+            btnZero.TabIndex = 18;
+            btnZero.Tag = 0;
+            btnZero.Text = "0";
+            btnZero.UseVisualStyleBackColor = false;
+            btnZero.Click += NumBtnClicked;
             // 
             // btnPosNeg
             // 
-            this.btnPosNeg.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnPosNeg.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnPosNeg.Location = new System.Drawing.Point(12, 266);
-            this.btnPosNeg.Name = "btnPosNeg";
-            this.btnPosNeg.Size = new System.Drawing.Size(74, 37);
-            this.btnPosNeg.TabIndex = 17;
-            this.btnPosNeg.Tag = "PosNeg";
-            this.btnPosNeg.Text = "+/-";
-            this.btnPosNeg.UseVisualStyleBackColor = false;
+            btnPosNeg.BackColor = Color.PaleVioletRed;
+            btnPosNeg.ForeColor = Color.LavenderBlush;
+            btnPosNeg.Location = new Point(12, 266);
+            btnPosNeg.Name = "btnPosNeg";
+            btnPosNeg.Size = new Size(74, 37);
+            btnPosNeg.TabIndex = 17;
+            btnPosNeg.Tag = "PosNeg";
+            btnPosNeg.Text = "+/-";
+            btnPosNeg.UseVisualStyleBackColor = false;
             // 
             // display
             // 
-            this.display.BackColor = System.Drawing.Color.LavenderBlush;
-            this.display.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.display.Location = new System.Drawing.Point(12, 31);
-            this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(315, 43);
-            this.display.TabIndex = 23;
-            this.display.Text = "0";
-            this.display.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            display.BackColor = Color.LavenderBlush;
+            display.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            display.Location = new Point(12, 31);
+            display.Name = "display";
+            display.Size = new Size(315, 43);
+            display.TabIndex = 23;
+            display.Text = "0";
+            display.TextAlign = ContentAlignment.MiddleRight;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Thistle;
-            this.ClientSize = new System.Drawing.Size(339, 328);
-            this.Controls.Add(this.display);
-            this.Controls.Add(this.btnCalc);
-            this.Controls.Add(this.btnDecimal);
-            this.Controls.Add(this.btnZero);
-            this.Controls.Add(this.btnPosNeg);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnThree);
-            this.Controls.Add(this.btnTwo);
-            this.Controls.Add(this.btnOne);
-            this.Controls.Add(this.btnSubtract);
-            this.Controls.Add(this.btnSix);
-            this.Controls.Add(this.btnFive);
-            this.Controls.Add(this.btnFour);
-            this.Controls.Add(this.btnMultiply);
-            this.Controls.Add(this.btnNine);
-            this.Controls.Add(this.btnEight);
-            this.Controls.Add(this.btnSeven);
-            this.Controls.Add(this.btnDivide);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnC);
-            this.Controls.Add(this.btnCE);
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.Name = "Form1";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Thistle;
+            ClientSize = new Size(339, 328);
+            Controls.Add(display);
+            Controls.Add(btnCalc);
+            Controls.Add(btnDecimal);
+            Controls.Add(btnZero);
+            Controls.Add(btnPosNeg);
+            Controls.Add(btnAdd);
+            Controls.Add(btnThree);
+            Controls.Add(btnTwo);
+            Controls.Add(btnOne);
+            Controls.Add(btnSubtract);
+            Controls.Add(btnSix);
+            Controls.Add(btnFive);
+            Controls.Add(btnFour);
+            Controls.Add(btnMultiply);
+            Controls.Add(btnNine);
+            Controls.Add(btnEight);
+            Controls.Add(btnSeven);
+            Controls.Add(btnDivide);
+            Controls.Add(btnDelete);
+            Controls.Add(btnC);
+            Controls.Add(btnCE);
+            Cursor = Cursors.WaitCursor;
+            Name = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion

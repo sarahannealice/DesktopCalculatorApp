@@ -24,7 +24,7 @@ namespace DesktopCalculator
             return tempX.ToString();
         }
 
-        //method for multiplication
+        //method for multiplication 
         public static string Product(double rightNum, double leftNum)
         {
             tempX = rightNum * leftNum;

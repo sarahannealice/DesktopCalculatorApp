@@ -25,7 +25,8 @@ namespace DesktopCalculator
             //resets display if number is pressed directly after 'calculate'
             tempNum = display.Text;
 
-            switch (((Button)sender).Tag) {
+            switch (((Button)sender).Tag)
+            {
                 case 1:
                     AddToDisplay("1", tempNum);
                     break;
@@ -65,7 +66,7 @@ namespace DesktopCalculator
             }
         }//end num btn handler
 
-        private void OpBtnClicked (object sender, EventArgs e)
+        private void OpBtnClicked(object sender, EventArgs e)
         {
             string result;
 
@@ -100,15 +101,18 @@ namespace DesktopCalculator
                     {
                         result = Math.Sum(rightNum, leftNum);
                         display.Text = result;
-                    } else if (tempOp == "-")
+                    }
+                    else if (tempOp == "-")
                     {
                         result = Math.Difference(rightNum, leftNum);
                         display.Text = result;
-                    } else if (tempOp == "*")
+                    }
+                    else if (tempOp == "*")
                     {
                         result = Math.Product(rightNum, leftNum);
                         display.Text = result;
-                    } else if (tempOp == "/")
+                    }
+                    else if (tempOp == "/")
                     {
                         result = Math.Quotient(rightNum, leftNum);
                         display.Text = result;
@@ -117,9 +121,9 @@ namespace DesktopCalculator
             }
         }//end operand btn handler
 
-        private void MiscBtnclicked (object sender, EventArgs e)
+        private void MiscBtnclicked(object sender, EventArgs e)
         {
-            switch(((Button)sender).Tag)
+            switch (((Button)sender).Tag)
             {
                 case "CE":
                     display.Text = "0";
@@ -128,6 +132,9 @@ namespace DesktopCalculator
                     rightEq = "0";
                     leftEq = "0";
                     break;
+                case "Del":
+                    DeleteDigit(tempNum);
+                    break;
             }
 
         }//end miscellaneous btn handler
@@ -135,15 +142,35 @@ namespace DesktopCalculator
 
 
         //----------------------------------METHODS----------------------------------//
+        //method to delete digit
+        private void DeleteDigit(string tmepNum)
+        {
+            if (tempNum == "0")
+            {
+                //do nothing -- keeps screen at 0
+            }
+            else if (tempNum.Length == 1)
+            {
+                //changes screen to 0 when at last digit
+                display.Text = "0";
+            }
+            else
+            {
+                tempNum = tempNum.Remove(tempNum.Length-1, 1);
+                display.Text = tempNum;
+            }
+        }//end delete digit method
 
         //method to add inputted number/decimal to display
         private void AddToDisplay(string inputDigit, string tempNum)
         {
             if (tempNum.Equals("0"))
             {
+
                 tempNum = inputDigit;
                 display.Text = tempNum;
-            } else
+            }
+            else
             {
                 tempNum += inputDigit;
                 display.Text = tempNum;
