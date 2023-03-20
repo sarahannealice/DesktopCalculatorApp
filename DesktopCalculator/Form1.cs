@@ -9,17 +9,75 @@ namespace DesktopCalculator
 
         private void NumBtnClickHandler(object sender, EventArgs e)
         {
-            switch (((Button)sender).Text)
+            if (display.Text == "0")
             {
-                case "1":
-                    display.Text = "1";
-                    break;
+                switch (((Button)sender).Tag)
+                {
+                    case 1:
+                        display.Text = "1";
+                        break;
+                    case 2:
+                        display.Text = "2"; 
+                        break;
+                    case 3:
+                        display.Text = "3";
+                        break;
+                    case 4:
+                        display.Text = "4";
+                        break;
+                    case 5:
+                        display.Text = "5";
+                        break;
+                    case 6:
+                        display.Text = "6";
+                        break;
+                    case 7:
+                        display.Text = "7";
+                        break;
+                    case 8:
+                        display.Text = "8";
+                        break;
+                    case 9:
+                        display.Text = "9";
+                        break;
+                }
+            } 
+            else
+            {
+                switch (((Button)sender).Tag)
+                {
+                    case 0:
+                        display.Text += "0";
+                        break;
+                    case 1:
+                        display.Text += "1";
+                        break;
+                    case 2:
+                        display.Text += "2";
+                        break;
+                    case 3:
+                        display.Text += "3";
+                        break;
+                    case 4:
+                        display.Text += "4";
+                        break;
+                    case 5:
+                        display.Text += "5";
+                        break;
+                    case 6:
+                        display.Text += "6";
+                        break;
+                    case 7:
+                        display.Text += "7";
+                        break;
+                    case 8:
+                        display.Text += "8";
+                        break;
+                    case 9:
+                        display.Text += "9";
+                        break;
+                }
             }
-            /*
-            if (sender == btnOne)
-            {
-                display.Text = "1";
-            }*/
         }
 
         private void btnTwo_Click(object sender, EventArgs e)
