@@ -69,31 +69,32 @@ namespace DesktopCalculator
         {
             string result;
 
-            /*
-            if (((Button)sender).Tag == "Add" || ((Button)sender).Tag == "Sub" || ((Button)sender).Tag == "Mult" || ((Button)sender).Tag == "Div")
-            {
-                rightEq = display.Text;
-                display.Text = "0";
-            } 
-            */
-
             switch (((Button)sender).Tag)
             {
                 case "Add":
                     rightEq = display.Text;
-                    rightNum = double.Parse(rightEq);
                     tempOp = "+";
                     display.Text = "0";
                     break;
                 case "Sub":
                     rightEq = display.Text;
-                    rightNum = double.Parse(rightEq);
                     tempOp = "-";
+                    display.Text = "0";
+                    break;
+                case "Mult":
+                    rightEq = display.Text;
+                    tempOp = "*";
+                    display.Text = "0";
+                    break;
+                case "Div":
+                    rightEq = display.Text;
+                    tempOp = "/";
                     display.Text = "0";
                     break;
                 case "Calc":
                     leftEq = display.Text;
                     leftNum = double.Parse(leftEq);
+                    rightNum = double.Parse(rightEq);
 
                     if (tempOp == "+")
                     {
@@ -102,6 +103,14 @@ namespace DesktopCalculator
                     } else if (tempOp == "-")
                     {
                         result = Math.Difference(rightNum, leftNum);
+                        display.Text = result;
+                    } else if (tempOp == "*")
+                    {
+                        result = Math.Product(rightNum, leftNum);
+                        display.Text = result;
+                    } else if (tempOp == "/")
+                    {
+                        result = Math.Quotient(rightNum, leftNum);
                         display.Text = result;
                     }
                     break;
