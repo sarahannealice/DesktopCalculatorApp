@@ -100,6 +100,7 @@
             this.btnDivide.Tag = "Div";
             this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = false;
+            this.btnDivide.Click += new System.EventHandler(this.OpBtnClicked);
             // 
             // btnMultiply
             // 
@@ -112,6 +113,47 @@
             this.btnMultiply.Tag = "Mult";
             this.btnMultiply.Text = "*";
             this.btnMultiply.UseVisualStyleBackColor = false;
+            this.btnMultiply.Click += new System.EventHandler(this.OpBtnClicked);
+            // 
+            // btnSubtract
+            // 
+            this.btnSubtract.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSubtract.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.btnSubtract.Location = new System.Drawing.Point(253, 181);
+            this.btnSubtract.Name = "btnSubtract";
+            this.btnSubtract.Size = new System.Drawing.Size(74, 37);
+            this.btnSubtract.TabIndex = 12;
+            this.btnSubtract.Tag = "Sub";
+            this.btnSubtract.Text = "-";
+            this.btnSubtract.UseVisualStyleBackColor = false;
+            this.btnSubtract.Click += new System.EventHandler(this.OpBtnClicked);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAdd.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.btnAdd.Location = new System.Drawing.Point(253, 223);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(74, 37);
+            this.btnAdd.TabIndex = 16;
+            this.btnAdd.Tag = "Add";
+            this.btnAdd.Text = "+";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.OpBtnClicked);
+            // 
+            // btnCalc
+            // 
+            this.btnCalc.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCalc.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.btnCalc.Location = new System.Drawing.Point(253, 266);
+            this.btnCalc.Name = "btnCalc";
+            this.btnCalc.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnCalc.Size = new System.Drawing.Size(74, 37);
+            this.btnCalc.TabIndex = 20;
+            this.btnCalc.Tag = "Calc";
+            this.btnCalc.Text = "=";
+            this.btnCalc.UseVisualStyleBackColor = false;
+            this.btnCalc.Click += new System.EventHandler(this.OpBtnClicked);
             // 
             // btnNine
             // 
@@ -152,18 +194,6 @@
             this.btnSeven.UseVisualStyleBackColor = false;
             this.btnSeven.Click += new System.EventHandler(this.NumBtnClicked);
             // 
-            // btnSubtract
-            // 
-            this.btnSubtract.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnSubtract.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnSubtract.Location = new System.Drawing.Point(253, 181);
-            this.btnSubtract.Name = "btnSubtract";
-            this.btnSubtract.Size = new System.Drawing.Size(74, 37);
-            this.btnSubtract.TabIndex = 12;
-            this.btnSubtract.Tag = "Sub";
-            this.btnSubtract.Text = "-";
-            this.btnSubtract.UseVisualStyleBackColor = false;
-            // 
             // btnSix
             // 
             this.btnSix.BackColor = System.Drawing.Color.Pink;
@@ -202,19 +232,6 @@
             this.btnFour.Text = "4";
             this.btnFour.UseVisualStyleBackColor = false;
             this.btnFour.Click += new System.EventHandler(this.NumBtnClicked);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAdd.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnAdd.Location = new System.Drawing.Point(253, 223);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(74, 37);
-            this.btnAdd.TabIndex = 16;
-            this.btnAdd.Tag = "Add";
-            this.btnAdd.Text = "+";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.OpBtnClicked);
             // 
             // btnThree
             // 
@@ -255,19 +272,18 @@
             this.btnOne.UseVisualStyleBackColor = false;
             this.btnOne.Click += new System.EventHandler(this.NumBtnClicked);
             // 
-            // btnCalc
+            // btnZero
             // 
-            this.btnCalc.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnCalc.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnCalc.Location = new System.Drawing.Point(253, 266);
-            this.btnCalc.Name = "btnCalc";
-            this.btnCalc.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCalc.Size = new System.Drawing.Size(74, 37);
-            this.btnCalc.TabIndex = 20;
-            this.btnCalc.Tag = "Calc";
-            this.btnCalc.Text = "=";
-            this.btnCalc.UseVisualStyleBackColor = false;
-            this.btnCalc.Click += new System.EventHandler(this.OpBtnClicked);
+            this.btnZero.BackColor = System.Drawing.Color.Pink;
+            this.btnZero.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnZero.Location = new System.Drawing.Point(92, 266);
+            this.btnZero.Name = "btnZero";
+            this.btnZero.Size = new System.Drawing.Size(74, 37);
+            this.btnZero.TabIndex = 18;
+            this.btnZero.Tag = 0;
+            this.btnZero.Text = "0";
+            this.btnZero.UseVisualStyleBackColor = false;
+            this.btnZero.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnDecimal
             // 
@@ -281,19 +297,6 @@
             this.btnDecimal.Text = ".";
             this.btnDecimal.UseVisualStyleBackColor = false;
             this.btnDecimal.Click += new System.EventHandler(this.NumBtnClicked);
-            // 
-            // btnZero
-            // 
-            this.btnZero.BackColor = System.Drawing.Color.Pink;
-            this.btnZero.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnZero.Location = new System.Drawing.Point(92, 266);
-            this.btnZero.Name = "btnZero";
-            this.btnZero.Size = new System.Drawing.Size(74, 37);
-            this.btnZero.TabIndex = 18;
-            this.btnZero.Tag = 0;
-            this.btnZero.Text = "0";
-            this.btnZero.UseVisualStyleBackColor = false;
-            this.btnZero.Click += new System.EventHandler(this.NumBtnClicked);
             // 
             // btnPosNeg
             // 

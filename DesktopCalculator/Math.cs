@@ -18,9 +18,9 @@ namespace DesktopCalculator
             //if 
         }
 
-        public static string Difference(double leftNum, double rightNum)
+        public static string Difference(double rightNum, double leftNum)
         {
-            tempX = leftNum - rightNum;
+            tempX = rightNum - leftNum;
             return tempX.ToString();
         }
 
