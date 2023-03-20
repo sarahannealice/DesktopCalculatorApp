@@ -58,7 +58,7 @@ namespace DesktopCalculator
                     AddToDisplay("0", tempNum);
                     break;
                 case "Dec":
-                    AddToDisplay(".", rightEq);
+                    AddToDisplay(".", tempNum);
                     break;
                 case "PosNeg":
                     //send to posneg method
@@ -167,14 +167,21 @@ namespace DesktopCalculator
         {
             if (tempNum.Equals("0"))
             {
-
-                tempNum = inputDigit;
-                display.Text = tempNum;
+                if (inputDigit.Equals("."))
+                {
+                    //keeps 0 and adds decimal after
+                    display.Text += inputDigit;
+                } else
+                {
+                    display.Text = inputDigit;
+                }
+            } else if (inputDigit.Equals(".") && tempNum.Contains('.'))
+            {
+                //do nothing
             }
             else
             {
-                tempNum += inputDigit;
-                display.Text = tempNum;
+                display.Text += inputDigit;
             }
         }//end display method
     }
