@@ -10,12 +10,18 @@ namespace DesktopCalculator
     {
         private static double tempX;
 
-        public static String Sum(double rightNum, double leftNum)
+        public static string Sum(double rightNum, double leftNum)
         {
             tempX = leftNum + rightNum;
             return tempX.ToString();
 
             //if 
+        }
+
+        public static string Difference(double leftNum, double rightNum)
+        {
+            tempX = leftNum - rightNum;
+            return tempX.ToString();
         }
 
     }

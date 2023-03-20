@@ -2,12 +2,15 @@ namespace DesktopCalculator
 {
     public partial class Form1 : Form
     {
-     
+
         //variables
+        private string tempNum;
         private string rightEq;
         private string leftEq;
         private double rightNum;
         private double leftNum;
+        private string tempOp;
+        private string calc = "=";
 
 
 
@@ -20,12 +23,8 @@ namespace DesktopCalculator
         private void NumBtnClicked(object sender, EventArgs e)
         {
             //resets display if number is pressed directly after 'calculate'
-            rightEq = display.Text;
 
             switch (((Button)sender).Tag) {
-                case 0:
-                    AddToDisplay("0", rightEq);
-                    break;
                 case 1:
                     AddToDisplay("1", rightEq);
                     break;
@@ -53,6 +52,9 @@ namespace DesktopCalculator
                 case 9:
                     AddToDisplay("9", rightEq);
                     break;
+                case 0:
+                    AddToDisplay("0", rightEq);
+                    break;
                 case "Dec":
                     AddToDisplay(".", rightEq);
                     break;
@@ -60,23 +62,47 @@ namespace DesktopCalculator
                     //send to posneg method
                     break;
             }
-        }
+        }//end num btn handler
 
         private void OpBtnClicked (object sender, EventArgs e)
         {
-            rightNum = double.Parse(rightEq);
-            leftEq = display.Text;
-            leftNum = double.Parse(leftEq);
+            string result;
 
             //resets counter for 'calculate' check
+
+            rightEq = display.Text;
+            rightNum = double.Parse(rightEq);
 
             switch (((Button)sender).Tag)
             {
                 case "Add":
-                    Math.Sum(rightNum, leftNum);
+                    tempOp = "+";
+                    display.Text = "0";
+                    break;
+                case "Sub":
+                    tempOp = "-";
+                    display.Text = "0";
+                    break;
+                case "Calc":
+                    leftEq = display.Text;
+                    leftNum = double.Parse(leftEq);
+                    //when user presses equal prior to an operand
+                    if (tempOp == "")
+                    {
+                        //do nothing
+                    }
+                    else if (tempOp == "+")
+                    {
+                        result = Math.Sum(rightNum, leftNum);
+                        AddToDisplay(calc, result);
+                    } else if (tempOp == "-")
+                    {
+                        result = Math.Difference(rightNum, leftNum);
+                        AddToDisplay(calc, result);
+                    }
                     break;
             }
-        }
+        }//end operand btn handler
 
         private void MiscBtnclicked (object sender, EventArgs e)
         {
@@ -85,42 +111,48 @@ namespace DesktopCalculator
                 case "CE":
                     display.Text = "0";
                     break;
+                case "C":
+                    rightEq = "0";
+                    leftEq = "0";
+                    break;
             }
 
-        }
+        }//end miscellaneous btn handler
 
 
 
         //----------------------------------METHODS----------------------------------//
+
         //method to add inputted number/decimal to display
-        private void AddToDisplay(string inputDigit, string rightEq)
+        private void AddToDisplay(string inputDigit, string tempNum)
         {
-            if (display.Text.Equals('0'))
+            if (inputDigit == "=")
             {
-                if (!inputDigit.Equals('.'))
+                display.Text = tempNum;
+            } else if (display.Text.Equals("0"))
+            {
+                if (!inputDigit.Equals("."))
                 {
-                    display.Text = inputDigit;
-                } else if (inputDigit.Equals('.'))
+                    tempNum = inputDigit;
+                    display.Text = tempNum;
+                } else if (inputDigit.Equals("."))
                 {
                     //keeps 0 and adds decimal after
-                    rightEq += inputDigit;
-                    display.Text = rightEq;
-                } else
-                {
-                    display.Text += inputDigit;
+                    tempNum += inputDigit;
+                    display.Text = tempNum;
                 }
-            } else if (inputDigit.Equals('.'))
+            } else if (inputDigit.Equals("."))
             {
                 //prevents adding too many decimals throughout input string
-                if (!rightEq.EndsWith('.') && !rightEq.Contains('.'))
+                if (!tempNum.EndsWith(".") && !tempNum.Contains('.'))
                 {
-                    rightEq += inputDigit;
-                    display.Text = rightEq;
+                    tempNum += inputDigit;
+                    display.Text = tempNum;
                 }
             } else
             {
-                rightEq += inputDigit;
-                display.Text = rightEq;
+                tempNum += inputDigit;
+                display.Text = tempNum;
             }
         }//end display method
     }

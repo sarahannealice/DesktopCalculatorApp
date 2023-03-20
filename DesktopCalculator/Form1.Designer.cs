@@ -44,7 +44,7 @@
             this.btnThree = new System.Windows.Forms.Button();
             this.btnTwo = new System.Windows.Forms.Button();
             this.btnOne = new System.Windows.Forms.Button();
-            this.btnSum = new System.Windows.Forms.Button();
+            this.btnCalc = new System.Windows.Forms.Button();
             this.btnDecimal = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.btnPosNeg = new System.Windows.Forms.Button();
@@ -75,6 +75,7 @@
             this.btnC.Tag = "C";
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = false;
+            this.btnC.Click += new System.EventHandler(this.MiscBtnclicked);
             // 
             // btnDelete
             // 
@@ -213,6 +214,7 @@
             this.btnAdd.Tag = "Add";
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.OpBtnClicked);
             // 
             // btnThree
             // 
@@ -253,17 +255,19 @@
             this.btnOne.UseVisualStyleBackColor = false;
             this.btnOne.Click += new System.EventHandler(this.NumBtnClicked);
             // 
-            // btnSum
+            // btnCalc
             // 
-            this.btnSum.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnSum.ForeColor = System.Drawing.Color.LavenderBlush;
-            this.btnSum.Location = new System.Drawing.Point(253, 266);
-            this.btnSum.Name = "btnSum";
-            this.btnSum.Size = new System.Drawing.Size(74, 37);
-            this.btnSum.TabIndex = 20;
-            this.btnSum.Tag = "Sum";
-            this.btnSum.Text = "=";
-            this.btnSum.UseVisualStyleBackColor = false;
+            this.btnCalc.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnCalc.ForeColor = System.Drawing.Color.LavenderBlush;
+            this.btnCalc.Location = new System.Drawing.Point(253, 266);
+            this.btnCalc.Name = "btnCalc";
+            this.btnCalc.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnCalc.Size = new System.Drawing.Size(74, 37);
+            this.btnCalc.TabIndex = 20;
+            this.btnCalc.Tag = "Calc";
+            this.btnCalc.Text = "=";
+            this.btnCalc.UseVisualStyleBackColor = false;
+            this.btnCalc.Click += new System.EventHandler(this.OpBtnClicked);
             // 
             // btnDecimal
             // 
@@ -321,7 +325,7 @@
             this.BackColor = System.Drawing.Color.Thistle;
             this.ClientSize = new System.Drawing.Size(339, 328);
             this.Controls.Add(this.display);
-            this.Controls.Add(this.btnSum);
+            this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btnZero);
             this.Controls.Add(this.btnPosNeg);
@@ -364,7 +368,7 @@
         private Button btnThree;
         private Button btnTwo;
         private Button btnOne;
-        private Button btnSum;
+        private Button btnCalc;
         private Button btnDecimal;
         private Button btnZero;
         private Button btnPosNeg;
