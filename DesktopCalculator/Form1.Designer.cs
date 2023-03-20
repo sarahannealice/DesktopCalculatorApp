@@ -48,7 +48,7 @@
             this.btnDecimal = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.btnPosNeg = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.display = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCE
@@ -62,7 +62,7 @@
             this.btnCE.Tag = "CE";
             this.btnCE.Text = "CE";
             this.btnCE.UseVisualStyleBackColor = false;
-            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
+            this.btnCE.Click += new System.EventHandler(this.MiscBtnclicked);
             // 
             // btnC
             // 
@@ -305,22 +305,22 @@
             // 
             // display
             // 
-            this.label1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 31);
-            this.label1.Name = "display";
-            this.label1.Size = new System.Drawing.Size(315, 43);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "0";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.display.BackColor = System.Drawing.Color.LavenderBlush;
+            this.display.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.display.Location = new System.Drawing.Point(12, 31);
+            this.display.Name = "display";
+            this.display.Size = new System.Drawing.Size(315, 43);
+            this.display.TabIndex = 23;
+            this.display.Text = "0";
+            this.display.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Form
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Thistle;
             this.ClientSize = new System.Drawing.Size(339, 328);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.display);
             this.Controls.Add(this.btnSum);
             this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btnZero);
@@ -342,7 +342,7 @@
             this.Controls.Add(this.btnC);
             this.Controls.Add(this.btnCE);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.Name = "Form";
+            this.Name = "Form1";
             this.ResumeLayout(false);
 
         }
@@ -368,6 +368,6 @@
         private Button btnDecimal;
         private Button btnZero;
         private Button btnPosNeg;
-        private Label label1;
+        private Label display;
     }
 }

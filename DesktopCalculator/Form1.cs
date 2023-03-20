@@ -24,85 +24,104 @@ namespace DesktopCalculator
 
             switch (((Button)sender).Tag) {
                 case 0:
-                    addToDisplay("0", rightEq);
+                    AddToDisplay("0", rightEq);
                     break;
                 case 1:
-                    addToDisplay("1", rightEq);
+                    AddToDisplay("1", rightEq);
                     break;
                 case 2:
-                    addToDisplay("2", rightEq);
+                    AddToDisplay("2", rightEq);
                     break;
                 case 3:
-                    addToDisplay("3", rightEq);
+                    AddToDisplay("3", rightEq);
                     break;
                 case 4:
-                    addToDisplay("4", rightEq);
+                    AddToDisplay("4", rightEq);
                     break;
                 case 5:
-                    addToDisplay("5", rightEq);
+                    AddToDisplay("5", rightEq);
                     break;
                 case 6:
-                    addToDisplay("6", rightEq);
+                    AddToDisplay("6", rightEq);
                     break;
                 case 7:
-                    addToDisplay("7", rightEq);
+                    AddToDisplay("7", rightEq);
                     break;
                 case 8:
-                    addToDisplay("8", rightEq);
+                    AddToDisplay("8", rightEq);
                     break;
                 case 9:
-                    addToDisplay("9", rightEq);
+                    AddToDisplay("9", rightEq);
                     break;
                 case "Dec":
-                    addToDisplay(".", rightEq);
+                    AddToDisplay(".", rightEq);
+                    break;
+                case "PosNeg":
+                    //send to posneg method
                     break;
             }
         }
 
-        private void btnCE_Click(object sender, EventArgs e)
+        private void OpBtnClicked (object sender, EventArgs e)
         {
-            display.Text = "0";
+            rightNum = double.Parse(rightEq);
+            leftEq = display.Text;
+            leftNum = double.Parse(leftEq);
+
+            //resets counter for 'calculate' check
+
+            switch (((Button)sender).Tag)
+            {
+                case "Add":
+                    Math.Sum(rightNum, leftNum);
+                    break;
+            }
         }
 
+        private void MiscBtnclicked (object sender, EventArgs e)
+        {
+            switch(((Button)sender).Tag)
+            {
+                case "CE":
+                    display.Text = "0";
+                    break;
+            }
 
-
-
-
-
+        }
 
 
 
         //----------------------------------METHODS----------------------------------//
-        private void addToDisplay(string inputDigit, string rightEq)
+        //method to add inputted number/decimal to display
+        private void AddToDisplay(string inputDigit, string rightEq)
         {
-            if (display.Text.Equals("0"))
+            if (display.Text.Equals('0'))
             {
-                if (!inputDigit.Equals("."))
+                if (!inputDigit.Equals('.'))
                 {
                     display.Text = inputDigit;
-                } else if (inputDigit.Equals("."))
+                } else if (inputDigit.Equals('.'))
                 {
                     //keeps 0 and adds decimal after
                     rightEq += inputDigit;
-                    display.Text += rightEq;
+                    display.Text = rightEq;
                 } else
                 {
                     display.Text += inputDigit;
                 }
-            } else if (inputDigit.Equals("."))
+            } else if (inputDigit.Equals('.'))
             {
                 //prevents adding too many decimals throughout input string
-                if (!rightEq.EndsWith(".") && !rightEq.Contains("."))
+                if (!rightEq.EndsWith('.') && !rightEq.Contains('.'))
                 {
                     rightEq += inputDigit;
-                    display.Text += rightEq;
+                    display.Text = rightEq;
                 }
             } else
             {
                 rightEq += inputDigit;
-                display.Text += inputDigit;
+                display.Text = rightEq;
             }
-        }
-
+        }//end display method
     }
 }
