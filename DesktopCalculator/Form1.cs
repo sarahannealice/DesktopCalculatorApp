@@ -131,6 +131,7 @@ namespace DesktopCalculator
                 case "C":
                     rightEq = "0";
                     leftEq = "0";
+                    display.Text = "0";
                     break;
                 case "Del":
                     DeleteDigit(tempNum);
