@@ -8,8 +8,6 @@ namespace DesktopCalculator
 {
     internal class MathOperations
     {
-        private static double MAX = 9999999999D;
-        private static double MIN = -9999999999D;
 
     }
 }
